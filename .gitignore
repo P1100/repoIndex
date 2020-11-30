@@ -106,3 +106,8 @@ las/annotationsManager/log
 
 # macOS
 .DS_store
+
+/.env
+/out.txt
+/repoenv/
+/.idea/
