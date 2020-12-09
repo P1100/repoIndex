@@ -13,6 +13,9 @@ import fileinput
 import jsonschema
 import simplejson as json
 
+# TODO DELETE LATER (inspection line)
+# from ...LASUtils.mongodb import db
+
 key = b'n_jrI9S9ivI9iYQDEfVPqfntsxFyfSBp8375JFvIsxM='
 
 # genID_schema = {
@@ -89,6 +92,8 @@ def validateJSONschema_old(json_file,schema):
 def validateJSONschema(data):
     try:
         print("entered validateJSONschema")
+        cwd = os.getcwd()
+        print(cwd)
         with open('genomic_metadata.schema.json', 'r') as f:
             schema_data = f.read()
             schema = json.loads(schema_data)

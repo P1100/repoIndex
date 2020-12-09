@@ -7,6 +7,7 @@ from django.contrib import messages
 from django.core.exceptions import ImproperlyConfigured
 from django.shortcuts import redirect
 from django.utils import six
+# import six
 from django.views.decorators.csrf import csrf_protect
 from django.views.decorators.http import require_POST
 from django.utils.translation import ugettext_lazy as _
